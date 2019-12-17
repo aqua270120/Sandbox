@@ -1,14 +1,17 @@
-def word_count(str):
-    counts = {}
-    words = str.split()
+def CountFrequency(my_list):
+    freq = {}
+    words = my_list.split()
     for word in words:
-        if word in counts:
-            counts[word] +=1
+        if word in freq:
+            freq[word] += 1
         else:
-            counts[word] = 1
-    words
-    return counts
+            freq[word] = 1
+
+    for key,value in freq.items():
+        print("{} : {} ".format(key, value))
+
+
 def main():
-    text_input = input(print("Enter a string:"))
-    print(word_count(text_input))
+    my_list = input(print(" Please enter a string: "))
+    print(CountFrequency(my_list))
 main()
