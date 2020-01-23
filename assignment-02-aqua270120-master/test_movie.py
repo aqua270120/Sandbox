@@ -24,13 +24,7 @@ def run_tests():
     assert initial_movie.year == 2017
     assert initial_movie.is_watched
     # TODO: Add more tests, as appropriate, for each method
-    # Test check-unwatched:
-    print("Test check unwatched:")
-    print(initial_movie)
-    initial_movie.check_unwatch()
-    assert not initial_movie.is_watched
-    print(initial_movie.is_watched)
-    # Test check-watch
+
     print("Test check watched")
     initial_movie.check_watch()
     assert initial_movie.is_watched
